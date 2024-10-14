@@ -1,7 +1,21 @@
-# robots.txt for Sufiservices
-User-agent: *  # Apply to all web crawlers
-Disallow: /private/  # Disallow access to private directory
-Disallow: /temp/  # Disallow access to temporary files
+# robots.txt for https://www.sufiservices.in
 
-# Allow access to all other content
+# Allow all bots access to the main pages
+User-agent: *
 Allow: /
+
+# Block sensitive directories and asset files
+Disallow: /assets/
+Disallow: /privacy_policy.txt
+Disallow: /terms_of_use.txt
+
+# Disallow bots from accessing search results or unnecessary query pages
+Disallow: /search
+Disallow: /?*
+
+# Block specific bots (e.g., AhrefsBot)
+User-agent: AhrefsBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://www.sufiservices.in/sitemap.xml
