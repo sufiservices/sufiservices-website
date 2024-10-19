@@ -6,8 +6,6 @@ Allow: /
 
 # Block sensitive directories and asset files
 Disallow: /assets/
-Disallow: /privacy_policy.txt
-Disallow: /terms_of_use.txt
 
 # Disallow bots from accessing search results or unnecessary query pages
 Disallow: /search
